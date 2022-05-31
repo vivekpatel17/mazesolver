@@ -1,0 +1,26 @@
+.node{
+    height: 25px;
+    width: 25px;
+    border: 0.1px solid #000;
+}
+
+.start{
+    background-color: rgb(7, 91, 248);
+    /* animation-name: animation; */
+    /* animation-duration: 0.4s; */
+    /* border: 0.1px solid white; */
+}
+
+.end{
+    background-color: rgb(223, 6, 6);
+    /* animation-name: animationEnd; */
+    /* animation-duration: 0.4s; */
+    /* border: 0.1px solid white; */
+
+}  
+
+.wall{
+  background-color: rgb(17, 32, 60);
+  /* animation-name: animationWall; */
+  /* animation-duration: 0.5s; */
+}
