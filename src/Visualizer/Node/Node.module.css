@@ -1,26 +1,99 @@
-.node{
+.node {
     height: 25px;
     width: 25px;
-    border: 0.1px solid #000;
+    border: 0.1px solid #c4e0e0;
 }
 
-.start{
-    background-color: rgb(7, 91, 248);
-    /* animation-name: animation; */
-    /* animation-duration: 0.4s; */
-    /* border: 0.1px solid white; */
+.start {
+    background-color: #2dc75b;
+    animation-name: animationStart;
+    animation-duration: 0.5s;
+    border: 0.1px solid white;
 }
 
-.end{
-    background-color: rgb(223, 6, 6);
-    /* animation-name: animationEnd; */
-    /* animation-duration: 0.4s; */
-    /* border: 0.1px solid white; */
+.end {
+    background-color: #F32424;
+    animation-name: animationEnd;
+    animation-duration: 0.5s;
+    border: 0.1px solid white;
+}
 
-}  
+.wall {
+    background-color: #130625;
+    animation-name: animationWall;
+    animation-duration: 0.5s;
+    border: 0.1px solid #301557;
+}
 
-.wall{
-  background-color: rgb(17, 32, 60);
-  /* animation-name: animationWall; */
-  /* animation-duration: 0.5s; */
+@keyframes animationStart {
+    10% {
+        transform: scale(0.3);
+        background-color: #EEF3D2;
+        border-radius: 100%;
+    }
+
+    45% {
+        transform: scale(0.7);
+        background-color: #B689C0;
+    }
+
+    75% {
+        transform: scale(1.1);
+        background-color: #947EC3;
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: #6A67CE;
+    }
+}
+
+@keyframes animationEnd {
+    10% {
+        transform: scale(0.3);
+        background-color: #FEF9A7;
+        border-radius: 100%;
+    }
+
+    45% {
+        transform: scale(0.7);
+        background-color: #FAC213;
+    }
+
+    75% {
+        transform: scale(1.1);
+        background-color: #F77E21;
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: #D61C4E;
+    }
+}
+
+@keyframes animationWall {
+    0% {
+        transform: scale(0.3);
+        background-color: #7858A6;
+        border-radius: 100%;
+    }
+
+    25% {
+        transform: scale(0.6);
+        background-color: #5B4B8A;
+    }
+
+    50% {
+        transform: scale(0.9);
+        background-color: #4C3575;
+    }
+
+    75% {
+        transform: scale(1.1);
+        background-color: #371B58;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #16003B;
+    }
 }
