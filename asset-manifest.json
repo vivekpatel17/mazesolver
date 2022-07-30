@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mazesolver/static/css/main.db34d673.css",
+    "main.js": "/mazesolver/static/js/main.2b96abf6.js",
+    "static/js/787.28cb0dcd.chunk.js": "/mazesolver/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/mazesolver/index.html",
+    "main.db34d673.css.map": "/mazesolver/static/css/main.db34d673.css.map",
+    "main.2b96abf6.js.map": "/mazesolver/static/js/main.2b96abf6.js.map",
+    "787.28cb0dcd.chunk.js.map": "/mazesolver/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db34d673.css",
+    "static/js/main.2b96abf6.js"
+  ]
+}
