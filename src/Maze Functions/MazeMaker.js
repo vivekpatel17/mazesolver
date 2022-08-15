@@ -49,7 +49,7 @@ export function randomMaze(visited) {
         .fill(0)
         .map(() => new Array(col).fill(false));
 
-    boundaryMaker(visited_);
+    boundaryMaker(visited_)
 
     for (let i = 0; i < row; i++) {
         let colArr = new Set();
@@ -78,21 +78,24 @@ export function stairCaseMaze(visited) {
         .map(() => new Array(col).fill(false));
 
     boundaryMaker(visited_);
-
-    for (let i = 2; i < row - 2; i += 4) {
-        let k = i;
-        for (let j = 2; j < col - 2; j++) {
-            visited_[k][j] = true;
-            k--;
-        }
-    }
-    // for (let i = 3; i < row - 2; i += 4) {
-    //     let k = i;
-    //     for (let j = 2; j < col - 2; j++) {
-    //         visited_[k][j] = true;
-    //         k--;
-    //     }
-    // }
+    let k = 2; 
+	let l;
+	for(let i=2; i<row-2; i++){
+		l = k-4 >= 1 ? k-4 : k;
+		k = l;
+		for(let j=2; j<col-2; j+=4){
+			if(l === 1)
+				visited_[i][2] = '*';
+			else{
+                if(l < col-2)
+				visited_[i][l] = '*';
+                if(l+ 1 < col-2)
+				visited_[i][l+1] = '*';
+			}
+			l += 4;
+		}
+		k += 1;
+	}
 
     return visited_;
 }
